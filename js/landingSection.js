@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const landingSection = document.querySelector('.landing-section');
 
   const pageBackgrounds = {
-    '/pages/solutions.html': '../images/Transmission_helicopter.png',
-    '/pages/industry-news.html': '../images/double_transmission_towers.jpg',
-    '/pages/careers.html': '../images/Workers.jpg',
-    '/pages/contact.html': '../images/high-voltage-towers.jpg',
+    '/pages/solutions.html': '/images/Transmission_helicopter.png',
+    '/pages/industry-news.html': '/images/double_transmission_towers.jpg',
+    '/pages/careers.html': '/images/Workers.jpg',
+    '/pages/contact.html': '/images/high-voltage-towers.jpg',
   };
 
   const currentPath = window.location.pathname;
