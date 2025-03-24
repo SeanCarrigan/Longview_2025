@@ -11,15 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializeHeader() {
   const navLinks = document.querySelectorAll('.header-right .nav-link');
   const header = document.querySelector('.header');
-  // const currentPath = window.location.pathname;
-  // Ensure currentPath always has .html at the end
-  let currentPath = window.location.pathname;
-  if (!currentPath.endsWith('.html')) {
-    currentPath += '.html';
-  }
+  const currentPage = window.location.pathname;
+  console.log('currentPage:', currentPage);
 
-  const isMainPage = currentPath === '/index.html' || currentPath === '/';
-  const isJobDescriptionPage = currentPath.includes(
+  const isMainPage = currentPage === '/index.html' || currentPage === '/';
+  const isJobDescriptionPage = currentPage.includes(
     '/pages/job-description.html'
   );
 
@@ -58,7 +54,7 @@ function initializeHeader() {
 
   // Highlight active navigation link
   navLinks.forEach((link) => link.classList.remove('active'));
-  let activeLink = document.querySelector(`.nav-link[href="${currentPath}"]`);
+  let activeLink = document.querySelector(`.nav-link[href="${currentPage}"]`);
   if (!activeLink) {
     activeLink =
       document.querySelector('.nav-link[href="/index.html"]') ||
