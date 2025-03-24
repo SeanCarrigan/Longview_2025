@@ -11,7 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializeHeader() {
   const navLinks = document.querySelectorAll('.header-right .nav-link');
   const header = document.querySelector('.header');
-  const currentPage = window.location.pathname;
+  // const currentPage = window.location.pathname;
+  let currentPage = window.location.pathname;
+  if (!currentPage.endsWith('.html')) {
+    currentPage += '.html';
+  }
   console.log('currentPage:', currentPage);
 
   const isMainPage = currentPage === '/index.html' || currentPage === '/';

@@ -59,12 +59,12 @@ const renderCards = () => {
     return; // Ensure the main content container exists
   }
 
-  console.log('Rendering cards...');
+  // console.log('Rendering cards...');
   mainContent.innerHTML = ''; // Clear existing content before rendering
 
   // Loop through cardsData and create cards
   cardsData.forEach((card, index) => {
-    console.log(card); // Log each card to check data
+    // console.log(card);
 
     // Determine if the image should be on the right or left
     const imgOnRight = index % 2 === 0; // Use the same logic for alternating sides
