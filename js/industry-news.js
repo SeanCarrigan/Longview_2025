@@ -1,6 +1,6 @@
 import { cardData } from '../data/cardData.js';
 
-console.log('cardData:', cardData);
+// console.log('cardData:', cardData);
 
 function createCard({ imgURL, title, subtitle, date, description, link }) {
   const cardDiv = document.createElement('div');

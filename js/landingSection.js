@@ -7,6 +7,7 @@ window.onload = () => {
     '/pages/careers.html': '/images/Workers.jpg',
     '/pages/contact.html': '/images/high-voltage-towers.jpg',
   };
+  console.log('Available Paths:', Object.keys(pageBackgrounds));
 
   const currentPath = window.location.pathname;
 
