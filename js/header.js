@@ -11,10 +11,15 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializeHeader() {
   const navLinks = document.querySelectorAll('.header-right .nav-link');
   const header = document.querySelector('.header');
-  const currentPage = window.location.pathname;
+  // const currentPath = window.location.pathname;
+  // Ensure currentPath always has .html at the end
+  let currentPath = window.location.pathname;
+  if (!currentPath.endsWith('.html')) {
+    currentPath += '.html';
+  }
 
-  const isMainPage = currentPage === '/index.html' || currentPage === '/';
-  const isJobDescriptionPage = currentPage.includes(
+  const isMainPage = currentPath === '/index.html' || currentPath === '/';
+  const isJobDescriptionPage = currentPath.includes(
     '/pages/job-description.html'
   );
 
@@ -53,10 +58,11 @@ function initializeHeader() {
 
   // Highlight active navigation link
   navLinks.forEach((link) => link.classList.remove('active'));
-  let activeLink = document.querySelector(`.nav-link[href="${currentPage}"]`);
+  let activeLink = document.querySelector(`.nav-link[href="${currentPath}"]`);
   if (!activeLink) {
-    activeLink = document.querySelector('.nav-link[href="/index.html"]') || 
-                 document.querySelector('.nav-link[href="/"]'); // Support both paths
+    activeLink =
+      document.querySelector('.nav-link[href="/index.html"]') ||
+      document.querySelector('.nav-link[href="/"]'); // Support both paths
   }
   if (activeLink) {
     activeLink.classList.add('active');
