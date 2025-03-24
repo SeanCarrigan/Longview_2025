@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
     currentPath += '.html';
   }
 
-  console.log('Current Path:', currentPath);
-  console.log('Available Paths:', Object.keys(pageBackgrounds));
+  // console.log('Current Path:', currentPath);
+  // console.log('Available Paths:', Object.keys(pageBackgrounds));
 
   if (landingSection && pageBackgrounds[currentPath]) {
     const bgImage = pageBackgrounds[currentPath];
     landingSection.style.backgroundImage = `url('${bgImage}')`;
-    console.log('Background Image Set:', bgImage);
+    // console.log('Background Image Set:', bgImage);
   } else {
     console.log('No background image found for this path.');
   }

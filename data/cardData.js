@@ -1,5 +1,14 @@
 export const cardData = [
   {
+    imgURL: '/icons/Stonepeak_logo.png',
+    title: 'Stonepeak to Provide Equity Commitment to Longview',
+    subtitle: 'Stonepeak Infrastructure Partners',
+    date: 'March 25, 2025',
+    description:
+      'Longview announced it has secured an equity commitment from Stonepeak, a leading alternative investment firm specializing in infrastructure and real assets with approximately $72 billion in assets under management.',
+    link: 'https://www.businesswire.com/news/home/20250317017253/en/Stonepeak-to-Provide-Equity-Commitment-to-Longview-Infrastructure',
+  },
+  {
     imgURL: '/icons/MISO.png',
     title:
       'MISO Releases Schedule for Tranche 2.1 Competitive Transmission Projects',
