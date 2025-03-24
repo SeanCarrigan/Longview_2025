@@ -11,17 +11,17 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializeHeader() {
   const navLinks = document.querySelectorAll('.header-right .nav-link');
   const header = document.querySelector('.header');
-  // const currentPage = window.location.pathname;
   let currentPage = window.location.pathname;
-  if (!currentPage.endsWith('.html')) {
-    currentPage += '.html';
+
+  // Normalize currentPath by removing the .html extension
+  if (currentPage.endsWith('.html')) {
+    currentPage = currentPage.slice(0, -5); // Remove the '.html' part
   }
+
   console.log('currentPage:', currentPage);
 
-  const isMainPage = currentPage === '/index.html' || currentPage === '/';
-  const isJobDescriptionPage = currentPage.includes(
-    '/pages/job-description.html'
-  );
+  const isMainPage = currentPage === '/index' || currentPage === '/';
+  const isJobDescriptionPage = currentPage.includes('/pages/job-description');
 
   if (!isJobDescriptionPage) {
     // Apply scroll behavior for all pages except job description
@@ -58,12 +58,23 @@ function initializeHeader() {
 
   // Highlight active navigation link
   navLinks.forEach((link) => link.classList.remove('active'));
-  let activeLink = document.querySelector(`.nav-link[href="${currentPage}"]`);
+
+  // Normalize hrefs by removing the .html extension
+  let activeLink = Array.from(navLinks).find((link) => {
+    let href = link.getAttribute('href');
+    if (href.endsWith('.html')) {
+      href = href.slice(0, -5); // Remove the '.html' part
+    }
+    return href === currentPage;
+  });
+
+  // Fallback for root or main page
   if (!activeLink) {
     activeLink =
-      document.querySelector('.nav-link[href="/index.html"]') ||
+      document.querySelector('.nav-link[href="/index"]') ||
       document.querySelector('.nav-link[href="/"]'); // Support both paths
   }
+
   if (activeLink) {
     activeLink.classList.add('active');
   }
