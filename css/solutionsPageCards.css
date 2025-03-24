@@ -1,0 +1,135 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: none;
+  background: radial-gradient(circle, #f0f0f0, #d0d0d0);
+  background: radial-gradient(circle, #f0f0f0, #e0e0e0);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+}
+
+.text-box {
+  /* flex: 1; */
+  /* justify-content: flex-start; */
+  width: 50%;
+  margin: 1rem 2rem;
+}
+
+.text-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.text-box p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: start;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  width: 100%; /* Takes the full width of the text-box */
+  margin-top: 20px; /* Adds space above the button */
+}
+
+.text-box button {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.5rem 5rem;
+  background-color: #8fa0b3;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.text-box button:hover {
+  background-color: #6c7a8d;
+  color: white;
+  transform: scale(1.05);
+}
+
+.image-box {
+  flex: 1;
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.icon {
+  max-width: 350px;
+  max-height: auto;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  padding: 4rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  min-width: 350px;
+  min-height: 350px;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .section-content {
+    flex-direction: column;
+    text-align: flex-start;
+    max-height: none;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .text-box {
+    width: 90%;
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+
+  .text-box h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .text-box p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: start;
+  }
+
+  .image-box {
+    width: 100%;
+    height: 100%;
+  }
+  .icon {
+    margin-top: 0;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-content {
+    width: 85vw;
+  }
+}

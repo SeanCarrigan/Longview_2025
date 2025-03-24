@@ -1,0 +1,28 @@
+.career-section {
+  background-image: url('/images/high-voltage-towers.jpg');
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  max-width: 60vw;
+  margin: 0;
+}
+.card-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 5% 0 1% 0; /* top | right | bottom | left */
+}
+
+.card-content a {
+  width: 350px;
+  text-decoration: underline;
+  color: black;
+  margin-bottom: 2rem;
+}
+.card-content a,
+.card-content p {
+  font-size: 1.25rem;
+}

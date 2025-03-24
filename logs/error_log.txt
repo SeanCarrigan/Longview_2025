@@ -1,0 +1,60 @@
+[2024-09-17 17:51:15] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:54:57] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:56:07] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:56:54] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:57:57] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:58:39] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:59:15] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:59:58] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 18:04:25] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 18:04:59] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 18:06:11] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-11-26 18:35:41] Failed to send email: SMTP Error: Could not authenticate.
+[2024-11-26 18:40:26] Failed to send email: SMTP Error: Could not authenticate.
+[2024-11-26 18:42:26] Failed to send email: SMTP Error: Could not connect to SMTP host.
+[2024-11-26 18:44:01] Failed to send email: SMTP Error: Could not authenticate.
+[2024-11-26 18:46:55] Email sent successfully to development@longviewinfra.com from sean.t.carrigan@gmail.com
+[2024-11-26 18:47:51] Email sent successfully to development@longviewinfra.com from sean.t.carrigan@gmail.com
+[2024-11-26 19:35:46] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-11-26 19:50:34] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-11-26 19:57:21] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-11-26 19:59:00] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-11-26 20:04:13] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-11-26 20:23:38] Invalid file type uploaded: application/pdf
+[2024-11-26 20:26:31] Invalid file type uploaded: application/pdf
+[2024-11-26 20:29:36] Invalid file type uploaded: application/pdf
+[2024-11-26 20:32:12] Invalid file type uploaded: application/pdf
+[2024-11-26 20:32:46] Invalid file type uploaded: application/pdf
+[2024-11-26 20:33:40] Invalid file type uploaded: application/pdf
+[2024-11-26 20:34:19] Invalid file type uploaded: application/pdf
+[2024-11-26 20:34:41] Invalid file type uploaded: application/pdf
+[2024-11-26 20:35:54] Invalid file type uploaded: application/pdf
+[2024-11-26 20:36:58] Invalid file type uploaded: application/pdf
+[2024-11-26 20:37:55] Invalid file type uploaded: application/pdf
+[2024-11-26 20:38:05] Failed to send application email: SMTP Error: Could not authenticate.
+[2024-11-26 20:39:19] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-11-26 20:42:41] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-11-26 20:46:26] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-11-26 21:12:26] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-11-26 21:20:45] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-11-26 21:21:06] Email sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:36:48] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:38:36] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:46:59] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:50:33] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:51:04] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:52:42] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:59:30] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 09:04:09] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 09:12:49] Error sending application: SMTP Error: Could not authenticate.
+[2024-12-09 09:13:56] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:20:51] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:28:45] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:32:34] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:34:32] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:41:26] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:41:28] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:43:36] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:47:11] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 17:11:40] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 17:12:40] Job application sent successfully from sean.t.carrigan@gmail.com

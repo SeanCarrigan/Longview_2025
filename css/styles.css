@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Verdana, Helvetica, Aerial, sans-serif;
+  background-color: #f5f5f5;
+  color: rgb(63, 63, 63);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 5% 5% 5%; /* top | right | bottom | left */
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+
+  padding: 15px 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.header.scrolled {
+  background-color: #faf9f6;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-link img {
+  width: 25%;
+  min-width: 250px;
+  height: auto;
+  color: white;
+}
+
+/* Default state: Show white logo and hide black logo */
+.logo-black {
+  display: none;
+}
+
+.logo-white {
+  display: block;
+}
+
+/* When scrolled, switch to black logo */
+.scrolled .logo-black {
+  display: block;
+}
+
+.scrolled .logo-white {
+  display: none;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-right: 30px;
+}
+
+/* Navigation Links */
+.header-right a {
+  /* color: rgb(63, 63, 63); */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.header-right a.active {
+  background-color: white;
+  /* background-color: red; */
+  color: #555;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.header-right a:hover {
+  background-color: white;
+  color: #555;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.scrolled .header-right a.active {
+  background-color: #b0b0b0;
+}
+
+.scrolled .header-right a:hover {
+  background-color: #b0b0b0;
+}
+
+.header .logo-link img,
+.header-right a {
+  color: #faf9f6;
+  transition: color 0.3s ease;
+}
+
+.header.scrolled .logo-link img,
+.header.scrolled .header-right a,
+.header.scrolled .menu-toggle {
+  color: black;
+}
+
+/* Hamburger Menu Button */
+.menu-toggle {
+  display: none;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Close Button (X) */
+.menu-close {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1101;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 1024px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle.hidden {
+    display: none;
+  }
+
+  .menu-close.show {
+    display: block;
+  }
+
+  .header a {
+    color: white;
+  }
+
+  .header-right {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0;
+    z-index: 1000;
+    gap: 20px;
+  }
+
+  .header-right.show {
+    display: flex;
+  }
+
+  .header-right a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  .header.scrolled .header-right a {
+    color: white;
+  }
+
+  .header-right a:hover {
+    color: lightgray;
+  }
+}
+
+/* Home page landing Section Styles */
+.home-landing-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-landing-section img {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-landing-text {
+  position: absolute;
+  margin: 20% 0 0 5%; /* top | right | bottom | left */
+  width: 60%;
+  /* padding: 20px; */
+  color: white;
+  z-index: 2;
+  text-align: left;
+}
+
+.home-landing-text h2 {
+  font-size: 4.5rem;
+  transform: translateX(-100%); /* Start off-screen to the left */
+  opacity: 0;
+  animation: slideIn 1.25s ease-out forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0); /* End at its original position */
+    opacity: 1;
+  }
+}
+
+/* Contact Section Styles */
+.contact-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-group:hover {
+  transform: scale(1.05);
+}
+
+.contact-info h2 {
+  margin: 0;
+  color: azure;
+  font-size: 3rem;
+  transition: color 0.3s ease;
+}
+
+.contact-group:hover h2 {
+  color: darkgray;
+}
+
+#contact-icon {
+  font-size: 3rem;
+  color: azure;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact-group:hover #contact-icon {
+  color: darkgray;
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* Modal Styles */
+
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+/* Modal content */
+.modal-content {
+  /* background-color: rgb(191, 191, 191); */
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: modal-appear 0.4s ease;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Close button (X) */
+.close {
+  color: rgb(63, 63, 63);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Add animation for modal appearance */
+@keyframes modal-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form styles */
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50%;
+  height: 20%;
+  object-fit: contain;
+}
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 500px;
+}
+.success-message {
+  font-size: 1.2rem;
+  color: rgb(63, 63, 63);
+  text-align: center;
+}
+
+.error-message {
+  font-size: 1.2rem;
+  color: rgb(63, 63, 63);
+  text-align: center;
+}
+
+.modal-content label {
+  font-weight: bold;
+  color: rgb(63, 63, 63);
+}
+
+.modal-content input[type='text'],
+.modal-content input[type='email'],
+.modal-content textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+#message {
+  height: 150px;
+  resize: vertical;
+}
+
+.modal-content input[type='text']:focus,
+.modal-content input[type='email']:focus,
+.modal-content textarea:focus {
+  border-color: #555;
+  outline: none;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .landing-text h2 {
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+  }
+
+  .landing-text p {
+    font-size: 1rem;
+  }
+
+  .text-content {
+    margin: 2rem;
+  }
+
+  .section-content #icon {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 10% 0;
+  }
+
+  .section-content img {
+    height: auto;
+  }
+  .about-text-box {
+    width: 80vw;
+    margin: 0;
+  }
+}

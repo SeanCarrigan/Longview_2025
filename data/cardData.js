@@ -1,0 +1,78 @@
+export const cardData = [
+  {
+    imgURL: '/icons/MISO.png',
+    title:
+      'MISO Releases Schedule for Tranche 2.1 Competitive Transmission Projects',
+    subtitle: 'Midcontinent Independent System Operator',
+    date: 'December 2024',
+    description:
+      'On December 12, 2024, the MISO Board of Directors approved the 24 projects in the MTEP24 Report: Long Range Transmission Planning (LRTP) Tranche 2.1 Portfolio. In January, MISO issued notice that it would release seven RFP’s in 2025.',
+    link: 'https://cdn.misoenergy.org/LRTP%20Tranche%202.1%20RFP%20Release%20Schedule671259.pdf',
+  },
+  {
+    imgURL: '/icons/MISO.png',
+    title:
+      'MTEP24 Approval: The Largest Transmission Investment in U.S. History',
+    subtitle: 'Midcontinent Independent System Operator',
+    date: 'December 2024',
+    description:
+      "MISO's MTEP24 transmission plan is making history as the largest transmission portfolio ever undertaken in the United States. This ambitious plan covers 488 projects stretching more than 5,000 miles across 15 states. These projects include local reliability improvements, the Long Range Transmission Planning (LRTP) Tranche 2.1 initiatives, and Joint Targeted Interconnection Queue (JTIQ) projects with Southwest Power Pool (SPP).",
+    link: 'https://www.misoenergy.org/meet-miso/media-center/miso-matters/mtep24-approval-the-largest-transmission-investment-in-u.s.-history',
+  },
+  {
+    imgURL: '/icons/MISO.png',
+    title:
+      'MISO Board Approves Longview Infrastructure Midwest, LLC to join as a MISO Member',
+    subtitle: 'Midcontinent Independent System Operator',
+    date: 'December 2024',
+    description:
+      'At its December Board of Directors meeting, the MISO Board of Directors approved Longview’s Midwest affiliate, Longview Infrastructure Midwest, LLC, to join MISO. Longview is grateful for the opportunity and looks forward to being a partner and active participant in the region for years to come.',
+    link: 'https://www.linkedin.com/company/longview-infrastructure/posts/?feedView=all',
+  },
+  {
+    imgURL: '/icons/FERC.png',
+    title: 'FERC Strengthens Order No. 1920 with Expanded State Provisions',
+    subtitle: 'Federal Energy Regulatory Commission',
+    date: 'November 2024',
+    description:
+      'FERC today largely reaffirmed its landmark long-term transmission planning rule, Order 1920.',
+    link: 'https://www.ferc.gov/news-events/news/ferc-strengthens-order-no-1920-expanded-state-provisions',
+  },
+  {
+    imgURL: '/icons/GS-Logo-Horizontal-FullColor.png',
+    title: 'Strategic Industries Surging: Driving US Power Demand',
+    subtitle: 'Grid Strategies',
+    date: 'December 2024',
+    description:
+      'Over the past two years, the 5-year load growth forecast has increased by almost a factor of five. Current load forecasts may not have caught up with growth.',
+    link: 'https://gridstrategiesllc.com/wp-content/uploads/National-Load-Growth-Report-2024.pdf',
+  },
+  {
+    imgURL: '/icons/FERC.png',
+    title: 'FERC Takes on Long-Term Planning with Historic Transmission Rule',
+    subtitle: 'Federal Energy Regulatory Commission',
+    date: 'May 2024',
+    description:
+      'FERC acted today to ensure the transmission grid can meet the nation’s growing demand for reliable electricity with a new rule that outlines how to plan and pay for facilities that regions of the country will need to keep the lights on and power the American economy through the 21st Century.',
+    link: 'https://www.ferc.gov/news-events/news/ferc-takes-long-term-planning-historic-transmission-rule',
+  },
+  {
+    imgURL: '/icons/MISO.png',
+    title:
+      'Building a Stronger Future: MISO Leads the Charge on a Comprehensive Investment in Transmission Infrastructure',
+    subtitle: 'Midcontinent Independent System Operator',
+    date: 'September 2024',
+    description:
+      'The electric grid of the future is quickly evolving, and MISO is leading the charge to build the transmission of the future by proposing a $30 billion investment through its 2024 MISO Transmission Expansion Plan (MTEP24).',
+    link: 'https://www.misoenergy.org/meet-miso/media-center/miso-matters/mtep-2024-building-a-stronger-future/',
+  },
+  {
+    imgURL: '/icons/spp-logo.png',
+    title: 'SPP 2024 Integrated Transmission Planning Assessment Report',
+    subtitle: 'Southern Power Pool',
+    date: 'October 2024',
+    description:
+      'The 2024 Integrated Transmission Planning Assessment ushers SPP into a new era of investment in the grid of the future.',
+    link: 'https://spp.org/documents/72605/2024%20itp%20report%20draft%20v0.6.pdf',
+  },
+];

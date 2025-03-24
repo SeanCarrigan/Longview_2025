@@ -1,0 +1,218 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #3f3f3f;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Ensure content doesn't overlap with header */
+header {
+  position: fixed;
+  z-index: 1000;
+}
+
+/* Add margin to main content to ensure it's below header */
+main {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+}
+.career-section {
+  position: relative; /* Ensure the pseudo-element is positioned relative to the section */
+  width: 100vw;
+  min-height: 75vh;
+  background-image: url('/images/Workers.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  z-index: 1;
+}
+
+.career-top {
+  margin: 15% 0 0 5%; /* top | right | bottom | left */
+}
+
+.career-top h1 {
+  font-size: 4.75rem;
+  font-weight: 900;
+}
+
+.career-top p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+
+
+.career-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.career-section img {
+  width: 100%;
+}
+
+
+.career-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 1rem 0; */
+}
+
+
+.first-box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+
+.opportunities-section {
+  padding: 2rem 6rem 2rem;
+  /* background-color: #ececec; */
+  background: radial-gradient(circle, #f0f0f0, #d0d0d0);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.opportunities-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* padding-left: 2rem; */
+}
+
+.job-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 3rem;
+}
+
+.job-item {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #faf9f6;
+  color: black;
+}
+
+.job-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.job-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.job-link:visited {
+  color: #3f3f3f;
+}
+
+.job-description {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.job-location,
+.job-type {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-weight: 200;
+}
+
+.job-location i,
+.job-type i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.job-location span,
+.job-type span {
+  font-size: 1rem;
+}
+
+.links-and-contacts {
+  min-height: 250px;
+}
+
+/* #card #specific-logo {
+  width: 50%;
+  height: auto;
+} */
+
+@media (max-width: 1024px) {
+  .career-top {
+    margin: 45% 0 0 7%; /* top | right | bottom | left */
+  }
+
+  .text-content h1 {
+    margin-top: 30px;
+    text-align: start;
+  }
+
+  .card-content p {
+    line-height: 1.5;
+  }
+
+  .about-section {
+    margin: 5% 7% 5% 7%; /* top | right | bottom | left */
+  }
+
+  .main-content {
+    margin: 0 7% 5% 7%; /* top | right | bottom | left */
+  }
+
+  .opportunities-section {
+    padding: 0 0 5% 0; /* top | right | bottom | left */
+  }
+
+  .opportunities-section h2 {
+    margin: 5% 3% 5% 5%;
+  }
+
+  .job-list {
+    margin: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-top h1 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+  .career-top p {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .text-content h1 {
+    /* font-size: 1.5rem; */
+  }
+}

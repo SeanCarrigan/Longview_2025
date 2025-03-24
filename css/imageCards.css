@@ -1,0 +1,100 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.image-card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #faf9f6;
+  /* background: radial-gradient(circle, #f0f0f0, #e0e0e0); */
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.image-card--img-right {
+  flex-direction: row; /* Image on the right */
+}
+
+.image-card--img-left {
+  flex-direction: row-reverse; /* Image on the left */
+}
+
+.image-card-text {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.image-card-text h2 {
+  /* align-self: flex-start;
+    font-size: 2.5rem;
+    max-width: 80%;
+     */
+  align-self: flex-start;
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem 3.5rem;
+  /* margin-bottom: 15px; */
+}
+
+.image-card-text p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  /* margin: 2rem; */
+  align-self: flex-start;
+  text-align: start;
+  max-width: 80%;
+  margin-left: 3.5rem;
+}
+
+.image-card-image {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.image-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-card-text button {
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.5rem 5rem;
+  width: auto;
+  margin: 2rem;
+  background-color: #8fa0b3;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.image-card-text button:hover {
+  background-color: #6c7a8d;
+  color: white;
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .image-card {
+    flex-direction: column;
+  }
+}

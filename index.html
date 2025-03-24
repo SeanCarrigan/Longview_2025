@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Longview Infrastructure</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=1.0.0" />
+    <link rel="stylesheet" href="css/pageDescriptionSection.css?v=1.0.0" />
+    <link rel="stylesheet" href="css/imageCards.css?v=1.0.1" />
+    <link rel="stylesheet" href="css/footer.css?v=1.0.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+      async
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TN5METVDYV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-TN5METVDYV');
+    </script>
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <!-- Header component inserted here -->
+    <script src="/js/header.js?v=1.0.0"></script>
+
+    <section id="home-landing-section" class="home-landing-section">
+      <img
+        src="images/Tower_field.jpg"
+        alt="Workers at a transmission site"
+        class="lazyload fade-image"
+        width="1920"
+        height="1080"
+      />
+      <div class="home-landing-text">
+        <h2>DEVELOPING INFRASTRUCTURE TO POWER AMERICA FORWARD</h2>
+      </div>
+    </section>
+    <section class="page-description-section">
+      <div class="description-text-box">
+        <p>
+          Rising electricity demand and a shifting energy mix has ushered in a
+          new era of expansion for the power grid.
+          <br /><br />
+          Longview Infrastructure is an integrated transmission platform. It
+          provides a unique combination of execution capabilities and strategic
+          capital to develop energy infrastructure that powers America forward.
+        </p>
+      </div>
+    </section>
+
+    <main class="main-content"></main>
+    <script type="module" src="/js/renderHomeCards.js"></script>
+    <div id="footer-container"></div>
+    <!-- Footer component inserted here -->
+    <script src="/js/footer.js?v=1.0.0"></script>
+  </body>
+</html>

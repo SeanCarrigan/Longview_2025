@@ -1,0 +1,185 @@
+/* Footer Styles */
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-top: none; /* Keeping this as per your original code */
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 15px 10px;
+  border-top: 1px solid #a9a9a9;
+  min-height: 80px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #b0b0b0;
+}
+
+.footer p {
+  font-size: 0.8rem;
+}
+
+.links-and-contacts {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 250px;
+  padding: 0 5rem;
+  box-sizing: border-box;
+  z-index: 1;
+  background: linear-gradient(to bottom, #ffffff, #b0b0b0);
+}
+
+.links-and-contacts h2 {
+  margin: 0.5rem 0;
+  text-decoration: solid underline 2px;
+}
+
+.footer-logo,
+.footer-links,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  max-width: 350px;
+  height: auto;
+}
+
+.footer-logo p {
+  font-size: 1.1rem;
+}
+
+.footer-links ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.links-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+}
+
+.footer-contact a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 100%;
+  background-color: #a9a9a9;
+  margin-left: 15%;
+  margin-right: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    width: 100%;
+  }
+
+  .links-and-contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+    min-height: 70vh;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow: auto;
+  }
+
+  .links-and-contacts > div {
+    flex: 0 1 auto;
+    margin: 0 0 5% 5%;
+  }
+
+  .links-and-contacts .vertical-line {
+    display: none;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer-logo img {
+    min-width: 250px;
+    max-width: 70%;
+    height: auto;
+  }
+
+  .footer-logo p {
+    font-size: 1.25rem;
+  }
+
+  .links-container {
+    margin-left: 0;
+  }
+
+  .footer-links h2 {
+    margin-top: 10px;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-contact h2 {
+    margin: 0;
+  }
+
+  .footer-contact a,
+  .footer-contact p {
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+  }
+
+  .footer {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+}
