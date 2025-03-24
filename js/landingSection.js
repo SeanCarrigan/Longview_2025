@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.onload = () => {
   const landingSection = document.querySelector('.landing-section');
 
   const pageBackgrounds = {
@@ -26,4 +26,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Debug: Log a message if no background is found for the current path
     console.log('No background image found for this path.');
   }
-});
+};
