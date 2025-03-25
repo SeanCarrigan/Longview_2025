@@ -11,49 +11,32 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializeHeader() {
   const navLinks = document.querySelectorAll('.header-right .nav-link');
   const header = document.querySelector('.header');
+  const logoWhite = document.querySelector('.logo-white');
+  const logoColored = document.querySelector('.logo-colored');
+
   let currentPage = window.location.pathname;
 
-  // Normalize currentPage by removing .html extensions
+  // Normalize currentPath by removing the .html extension
   if (currentPage.endsWith('.html')) {
     currentPage = currentPage.slice(0, -5);
   }
 
   console.log('currentPage:', currentPage);
 
-  const isMainPage = currentPage === '/' || currentPage === '/index';
-  const isJobDescriptionPage = currentPage.includes('/pages/job-description');
+  // Ensure white logo is visible and colored logo is hidden initially
+  logoWhite.style.display = 'block';
+  logoColored.style.display = 'none';
 
-  // Select logos
-  const logoWhite = document.querySelector('.logo-white');
-  const logoBlack = document.querySelector('.logo-black');
-  const logoColored = document.querySelector('.logo-colored'); // Home page logo
-
-  if (isMainPage) {
-    // **Use the colored logo on the home page**
-    logoColored.style.display = 'block';
-    logoWhite.style.display = 'none';
-    logoBlack.style.display = 'none';
-  } else {
-    // **For other pages, default to white-to-black transition**
-    logoColored.style.display = 'none';
-    logoWhite.style.display = 'block';
-    logoBlack.style.display = 'none';
-  }
-
-  // **Scroll behavior for all pages**
+  // Apply scroll behavior to toggle logos
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-      header.classList.add('scrolled'); // Dark background when scrolled
-      if (!isMainPage) {
-        logoWhite.style.display = 'none';
-        logoBlack.style.display = 'block';
-      }
+      header.classList.add('scrolled');
+      logoWhite.style.display = 'none';
+      logoColored.style.display = 'block';
     } else {
-      header.classList.remove('scrolled'); // Transparent background at top
-      if (!isMainPage) {
-        logoWhite.style.display = 'block';
-        logoBlack.style.display = 'none';
-      }
+      header.classList.remove('scrolled');
+      logoWhite.style.display = 'block';
+      logoColored.style.display = 'none';
     }
   });
 
@@ -77,6 +60,7 @@ function initializeHeader() {
   // Highlight active navigation link
   navLinks.forEach((link) => link.classList.remove('active'));
 
+  // Normalize hrefs by removing the .html extension
   let activeLink = Array.from(navLinks).find((link) => {
     let href = link.getAttribute('href');
     if (href.endsWith('.html')) {
@@ -85,6 +69,7 @@ function initializeHeader() {
     return href === currentPage;
   });
 
+  // Fallback for root or main page
   if (!activeLink) {
     activeLink =
       document.querySelector('.nav-link[href="/index"]') ||
@@ -94,4 +79,27 @@ function initializeHeader() {
   if (activeLink) {
     activeLink.classList.add('active');
   }
+
+  // Set active link function
+  const setActiveLink = (activeLink) => {
+    navLinks.forEach((link) => link.classList.remove('active'));
+    if (activeLink) {
+      activeLink.classList.add('active');
+    }
+  };
+
+  // Click event for navigation links
+  navLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+
+      // Allow full-page navigation without any scrolling behavior
+      if (!href.startsWith('#')) {
+        return;
+      }
+
+      e.preventDefault();
+      setActiveLink(link);
+    });
+  });
 }
