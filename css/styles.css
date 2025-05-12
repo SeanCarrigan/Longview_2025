@@ -454,8 +454,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  .landing-text h2 {
-    font-size: 2.25rem;
+  .home-landing-text h2 {
+    font-size: 2.7rem;
+    margin-top: 80px;
     margin-bottom: 10px;
   }
 
