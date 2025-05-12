@@ -3,7 +3,7 @@ export const cardData = [
     imgURL: '/icons/PUCT_logo.png',
     title: 'Texas approves 765kV transmission for the Permian',
     subtitle: 'Public Utility Commission of Texas',
-    date: 'May 2025',
+    date: 'April 24, 2025',
     description:
       'Texas regulators approved a major build-out of extra high voltage transmission lines to meet the Permian Basin’s rapidly growing power needs.',
     link: 'https://ftp.puc.texas.gov/public/puct-info/agency/resources/pubs/news/2025/PUCT_Approves_Plan_for_the_First_Extra_High_Voltage_Transmission_Lines_in_ERCOT_Region.pdf',
