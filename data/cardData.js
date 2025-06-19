@@ -1,5 +1,15 @@
 export const cardData = [
   {
+    imgURL: '/icons/CAISO_logo.png',
+    title:
+      'CAISO approves two major competitive projects to reinforce the South Bay',
+    subtitle: 'California Independent System Operator',
+    date: 'May 22, 2025',
+    description:
+      'The CAISO Board of Governors approved a $4.8 billion transmission plan, including the Greater Bay Area 500 kV Transmission Reinforcement and the San Jose B – Northern Receiving Station 230 kV line',
+    link: 'https://www.caiso.com/about/news/news-releases/iso-board-of-governors-approves-2024-2025-transmission-plan',
+  },
+  {
     imgURL: '/icons/PUCT_logo.png',
     title: 'Texas approves 765kV transmission for the Permian',
     subtitle: 'Public Utility Commission of Texas',
