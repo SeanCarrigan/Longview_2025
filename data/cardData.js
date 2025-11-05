@@ -6,7 +6,7 @@ export const cardData = [
     date: 'November 1, 2025',
     description:
       'Longview was pleased to complete qualification as a Qualified Transmission Developer in MISO, Pre-Qualified Designated Entity in PJM and a Qualified RFP Respondent in SPP. It looks forward to participating in the coming years.',
-    link: '',
+    link: 'https://cdn.misoenergy.org/MISO%20Qualified%20Transmission%20Developers%20List82330.pdf',
   },
   {
     imgURL: '/icons/CAISO_logo.png',
