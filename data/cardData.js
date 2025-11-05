@@ -1,5 +1,14 @@
 export const cardData = [
   {
+    imgURL: '/icons/SPP_PJM_MISO_TriLogo.png',
+    title: 'SPP, PJM, MISO qualify Longview as transmission developer',
+    subtitle: 'CSPP, PJM, MISO',
+    date: 'November 1, 2025',
+    description:
+      'Longview was pleased to complete qualification as a Qualified Transmission Developer in MISO, Pre-Qualified Designated Entity in PJM and a Qualified RFP Respondent in SPP. It looks forward to participating in the coming years.',
+    link: '',
+  },
+  {
     imgURL: '/icons/CAISO_logo.png',
     title:
       'CAISO approves two major competitive projects to reinforce the South Bay',
